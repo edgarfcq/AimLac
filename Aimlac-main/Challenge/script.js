@@ -11,7 +11,7 @@ const screen_field = document.getElementById("screen");
 const max_X = 80;
 const max_Y = 45;
 var score = 0;
-var time = 59;
+var time = 30;
 var interval = null;
 var start_restart = true;
 target.style.transform = `translate(${Math.random() * max_X}vh,${Math.random() * max_Y}vh)`;
@@ -32,7 +32,7 @@ cross_5.addEventListener("click", function() {
 });
 start_button.addEventListener("click", function(){
     if (start_restart) {
-        time = 59;
+        time = 30;
         score = 0;
 
         score_text.textContent = `Score : ${score}`;
@@ -47,7 +47,7 @@ start_button.addEventListener("click", function(){
         start_restart = false;
     }
     else{
-        time = 59;
+        time = 30;
         score = 0;
 
         score_text.textContent = `Score : ${score}`;

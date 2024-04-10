@@ -11,7 +11,7 @@ const screen_field = document.getElementById("screen");
 const max_X = 80;
 const max_Y = 45;
 var score = 0;
-var time = 9;
+var time = 30;
 var interval = null;
 var start_restart = true;
 var on_mouse_target = null;
@@ -38,7 +38,7 @@ cross_5.addEventListener("click", function() {
     screen_field.style.cursor = `url("cross_5.png") 5 5, auto`;
 });
 start_button.addEventListener("click", function(){
-    time = 59;
+    time = 30;
     score = 0;
     current_pos_x = max_X / 2;
     current_pos_y = max_Y / 2;
@@ -123,7 +123,6 @@ function MoveOffset(){
 }
 function MoveTime(){
     MoveOffset();
-    
 }
 function Score_Time(){
     score_text.textContent = `Score : ${score}`;
