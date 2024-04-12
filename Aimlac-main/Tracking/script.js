@@ -1,5 +1,6 @@
 const target = document.getElementById("target");
 const score_text = document.getElementById("score");
+const high_score_text = document.getElementById("high_score");
 const timer_text = document.getElementById("timer");
 const start_button = document.getElementById("start");
 const cross_1 = document.getElementById("cross_1");
@@ -11,6 +12,7 @@ const screen_field = document.getElementById("screen");
 const max_X = 80;
 const max_Y = 45;
 var score = 0;
+var high_score = 0;
 var time = 30;
 var interval = null;
 var start_restart = true;
@@ -65,9 +67,13 @@ function Timer() {
         timer_text.textContent = `Timer : ${time}`; 
     if (time <= 0) {
         Restart();
+        if(score > high_score) {
+            high_score = score;
+            high_score_text.textContent = `High Score : ${high_score}`;
+        }
         clearInterval(interval);
         clearInterval(move_interval);
-        clearInterval(score_interval)
+        clearInterval(score_interval);
     }
 }
 function Restart() {
@@ -130,5 +136,4 @@ function Score_Time(){
     if (on_mouse_target && time > 0) {
         score+=3;
     }
-
 }
