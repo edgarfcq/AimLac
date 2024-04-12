@@ -22,7 +22,7 @@ Mode "Challenge" :
 
 ## Installation :
 **Cloner le Répertoire** : Clonez le répertoire du jeu depuis le dépôt GitHub.
-```git clone https://github.com/edgarfcq/macro-aim-trainer.git```
+```git clone https://github.com/edgarfcq/AimLac.git```
 
 **Navigateur Web** : Ouvrez le fichier index.html dans votre navigateur web.
 
