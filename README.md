@@ -27,3 +27,7 @@ Mode "Challenge" :
 **Navigateur Web** : Ouvrez le fichier index.html dans votre navigateur web.
 
 **Jouez !** : Sélectionnez le mode de jeu souhaité en cliquant sur l'option correspondante (Tracking ou Challenge) et commencez à jouer !
+
+## Crédits :
+
+@Esteban_Przz @FF-Henry @edgarfcq
